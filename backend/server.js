@@ -13,9 +13,9 @@ const app = express();
 app.use(cors());
 app.use(express.json()); // to accept json data
 
-app.get("/", (req, res) => {
-  res.send("API is running successfully");
-});
+// app.get("/", (req, res) => {
+//   res.send("API is running successfully");
+// });
 
 // API endpoint to fetch data from MongoDB
 app.get("/api/data", async (req, res) => {
